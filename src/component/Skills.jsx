@@ -1,4 +1,4 @@
-import { RiReactjsFill } from "react-icons/ri";
+import { RiReactjsFill } from 'react-icons/ri';
 import { FaJava } from "react-icons/fa6";
 import { SiJavascript } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
