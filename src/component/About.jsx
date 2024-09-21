@@ -1,7 +1,8 @@
 import react from "react"
-import image1 from "../assets/aboutme.jpeg"
+import image1 from "../assets/aboutme.jpeg";
 export default function About(){
-    return <section id="about"  className="py-5">
+    return( 
+    <section id="about"  className="py-5">
     <div className="border-b border-neutral-900 lg:pb-4">
         <h1 className="my-20 text-center text-4xl">About Me</h1>
     <div className="flex flex-wrap">
@@ -15,4 +16,5 @@ export default function About(){
     </div>
     </div>
     </section>
+    )
 }

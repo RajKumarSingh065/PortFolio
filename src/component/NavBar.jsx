@@ -1,16 +1,18 @@
 import React from "react";
 import { FaLinkedin, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
+import logoImage from '../assets/v2--45-.png';
+import Button from '../component/Button';
 
 export default function NavBar() {
-  return (
-    <header  className="bg-transparent md:sticky top-0 z-10">
+    return (
+    <header className="bg-transparent md:sticky top-0 fixed left-0 max-w-full z-50">
       <div className="flex items-center justify-between p-4 lg:justify-between">
         <div className="flex items-center">
           <img
-            width="60"
-            height="60"
-            src="https://img.icons8.com/clouds/100/r--v2.png"
-            alt="r--v2"
+            width="28"
+            height="28"
+            src={logoImage}
+            alt="r--v2-"
             className="mr-4"
           />
           <a
@@ -23,26 +25,41 @@ export default function NavBar() {
           </a>
         </div>
         <nav className="hidden md:flex md:space-x-4">
+          <ul className="inline-flex bg-fixed">
+            <li>
           <a
             href="#about"
             className="rounded-md px-4 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
           >
             ABOUT
           </a>
+          </li>
+          <li>
           <a
             href="#project"
             className="rounded-md px-4 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
           >
             PROJECTS
           </a>
+          </li>
+          <li>
           <a
             href="#skills"
             className="rounded-md px-4 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
           >
             SKILLS
           </a>
+          </li>
+          <li>
+          <a 
+            href="#contact"
+            className="rounded-md px-4 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">
+            CONTACT
+          </a>
+          </li>
+          </ul>
         </nav>
-        <div className="flex space-x-4 text-xl">
+        <div className="flex align place-items-center space-x-4 text-xl">
           <a
             href="https://www.linkedin.com/in/raj-kumar-singh-2a9635251/"
             target="_blank"
@@ -62,23 +79,14 @@ export default function NavBar() {
             <FaGithub />
           </a>
           <a
-            href="https://www.instagram.com/dark_knight_065/"
+            href="https://drive.google.com/file/d/1uwngihpVHjyqKlL6wDzD7WRoyWeyva8K/view?usp=sharing"
+            download="Raj-Kumar-Singh-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="text-white hover:text-gray-400"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://twitter.com/your-twitter-handle"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-            className="text-white hover:text-gray-400"
-          >
-            <FaTwitter />
-          </a>
+            aria-label="Download Resume"
+            className="rounded-md px-4 py-2 text-sm font-medium text-white hover:text-white">
+            <Button />
+          </a>         
         </div>
       </div>
     </header>
